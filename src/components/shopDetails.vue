@@ -142,7 +142,7 @@
             getShopDetail() {
                 let xhr = new XMLHttpRequest();
                 let dataes = [];
-                xhr.open("POST",'http://54.199.244.110/#/php/shopDetail.php',true);
+                xhr.open("POST",'http://54.199.244.110/php/shopDetail.php',true);
                 xhr.addEventListener('load',() => {
                     if (xhr.status === 200){
                         let data = xhr.responseText;

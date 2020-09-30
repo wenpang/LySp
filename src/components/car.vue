@@ -146,7 +146,7 @@
             getPrevios() {
 
                 let lists;
-                axios.get("http://54.199.244.110/#/php/create.php").then(
+                axios.get("http://54.199.244.110/php/create.php").then(
                     (res) => {
                         let popo = res.data.split(';');
                       for (let i = 0; i < popo.length; i++) {
@@ -185,7 +185,7 @@
                     }*/
 
                     let xhr = new XMLHttpRequest();
-                    xhr.open('POST', 'http://54.199.244.110/#/php/checkList.php', true);
+                    xhr.open('POST', 'http://54.199.244.110/php/checkList.php', true);
                     xhr.addEventListener('load', () => {
                         if (xhr.status === 200) {
                             console.log('success')

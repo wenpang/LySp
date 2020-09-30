@@ -9,7 +9,7 @@
         </div>
         <div class="card mt-5">
             <div class="card-body mt-4">
-                <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm" method="post" action="http://54.199.244.110/#/php/success.php">
+                <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm" method="post" action="http://54.199.244.110/php/success.php">
                     <p style="color: #FF0000" id="message" class="text-center mb-3"></p>
                     <el-form-item label="姓名" prop="name" class="mr-5">
                         <el-input v-model.trim="ruleForm.name" name="name"></el-input>
@@ -81,7 +81,7 @@ import axios from 'axios';
         methods: {
 
             previous() {
-                axios.get('http://54.199.244.110/#/php/previous.php').then(
+                axios.get('http://54.199.244.110/php/previous.php').then(
                     (res) => {
                         if (res.data || res.data === 'true') {
                             console.log(res.data)

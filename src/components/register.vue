@@ -144,7 +144,7 @@
 
                 if (this.members.name !== '' && this.members.cellphone !== ''  && this.members.password2 !== '' && this.members.password !== '' && this.members.email !== '' && this.members.type !== '') {
 
-                    xhr.open('POST', 'http://54.199.244.110/#/php/register.php', true);
+                    xhr.open('POST', 'http://54.199.244.110/php/register.php', true);
                     xhr.addEventListener('load', () => {
 
                         if (xhr.status === 200) {
@@ -156,7 +156,7 @@
                                 password2.value = '';
                                 message.textContent = data;
                             } else {
-                                window.location.href = 'http://54.199.244.110/#/login'
+                                window.location.href = 'http://54.199.244.110/login'
                             }
                         }
                     })

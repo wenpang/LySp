@@ -169,7 +169,7 @@
 
           // 登出
             signout(){
-                axios.get('http://54.199.244.110/#/php/signout.php').then(
+                axios.get('http://54.199.244.110/php/signout.php').then(
                     (res) => {
                         console.log(res);
                         this.$message({
@@ -201,7 +201,7 @@
 
                 let user = [];
 
-                axios.get('http://54.199.244.110/#/php/SESSION.php').then(
+                axios.get('http://54.199.244.110/php/SESSION.php').then(
                     (res) => {
 
                         user = res.data.split(';');
