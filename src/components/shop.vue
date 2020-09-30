@@ -122,7 +122,7 @@
               let todos = [];
               let list = [];
 
-                axios.get('http://ec2-54-199-244-110.ap-northeast-1.compute.amazonaws.com/php/data.php').then((res) => {
+                axios.get('http://54.199.244.110/#/php/data.php').then((res) => {
 
                     dataes = res.data.split(',');
 

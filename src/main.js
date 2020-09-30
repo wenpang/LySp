@@ -19,7 +19,7 @@ router.beforeEach(((to, from, next) => {
 
   let currentUser;
   let xhr = new XMLHttpRequest();
-  xhr.open('GET', 'http://ec2-54-199-244-110.ap-northeast-1.compute.amazonaws.com/php/checkUser.php',true);
+  xhr.open('GET', 'http://54.199.244.110/#/php/checkUser.php',true);
   xhr.addEventListener('load', () => {
     if (xhr.status === 200) {
       currentUser = xhr.responseText;

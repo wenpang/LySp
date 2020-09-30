@@ -83,12 +83,12 @@
                     const usercode = document.getElementById('usercode');
                     let code = document.getElementById('code');
 
-                    xhr.open("POST", 'http://ec2-54-199-244-110.ap-northeast-1.compute.amazonaws.com/php/login.php', true);
+                    xhr.open("POST", 'http://54.199.244.110/#/php/login.php', true);
                     xhr.addEventListener('load', () => {
                         if (xhr.status === 200) {
                             let data = xhr.responseText;
                             if (data === 'true') {
-                                window.location.href = 'http://ec2-54-199-244-110.ap-northeast-1.compute.amazonaws.com/#/';
+                                window.location.href = 'http://54.199.244.110/#/';
                                 window.location.reload();
                             } else {
                                 username.value = '';
