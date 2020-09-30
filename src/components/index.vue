@@ -27,7 +27,7 @@
             return{
                 errorimg: '圖片載入錯誤',
                 video: {
-                    text: '旅行．微风山丘上的人情温度'
+                    text: '旅行．微風山丘上的人情溫度'
                 },
                 pices: [
                     {

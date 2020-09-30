@@ -5,7 +5,7 @@
                 <div class="card">
                     <div class="card-header">
                         <h5 style="color: #FF7744">
-                            <i class="fas fa-sign-in-alt"></i> 加入会员
+                            <i class="fas fa-sign-in-alt"></i> 加入會員
                         </h5>
                     </div>
                     <div class="card-body list">
@@ -23,7 +23,7 @@
                                 <label for="type">* 性別 : </label>
                                 <span>
                                     <select name="type" id="type" v-model.trim="members.type" style="width: 80px;margin-left: 15px;">
-                                        <option disabled>请选择</option>
+                                        <option disabled>请選擇</option>
                                         <option value="men">先生</option>
                                         <option value="women">小姐</option>
                                     </select>
@@ -42,7 +42,7 @@
 
                             </p>
                             <div class="input-group">
-                                <label for="cellphone">* 手机号码 : </label>
+                                <label for="cellphone">* 手機號碼 : </label>
                                 <span>
                                     <el-input type="tel" style="width: 150px;margin-left: 15px;" @blur="checkPhone()" name="cellphone" placeholder="请输入电话号码" v-model.trim="members.phone" id="cellphone"></el-input>
                                 </span>
@@ -51,7 +51,7 @@
 
                             </p>
                             <div class="input-group">
-                                <label for="password">* 设定密码  : </label>
+                                <label for="password">* 設定密碼  : </label>
                                 <span>
                                     <el-input  style="width: 150px;margin-left: 15px;" @blur="checkPassword()" name="password" placeholder="输入6~12个英数混合字元" id="password" v-model.trim="members.password" show-password></el-input>
                                 </span>
@@ -60,13 +60,13 @@
 
                             </p>
                             <div class="input-group">
-                                <label for="password2">* 确认密码 : </label>
+                                <label for="password2">* 確認密碼 : </label>
                                 <span>
                                 <el-input name="password2" style="width: 150px;margin-left: 15px;" placeholder="输入6~20个英数混合字元" id="password2" v-model.trim="members.password2" show-password></el-input>
                                 </span>
                             </div>
                             <div class="input-group mt-3">
-                                <label for="code" class="col-form-label">* 验证码 : </label>
+                                <label for="code" class="col-form-label">* 驗證碼 : </label>
                                 <span>
                                     <el-input name="code" style="width: 150px;margin-left: 15px;" required id="code" v-model.trim="members.code"></el-input>
                                 </span>
@@ -76,7 +76,7 @@
                             </p>
                             <div class="code mt-3">
                                 <button type="button" class="btn btn-primary" @click="createCode()">{{code}}</button>
-                                <button type="button" class="btn btn-info ml-3" @click="checkCode()">验证</button>
+                                <button type="button" class="btn btn-info ml-3" @click="checkCode()">驗證</button>
                             </div>
                             <div class="agree text-center mt-3" style="color: orangered">
                                 <input type="checkbox" value="" name="agree" id="agree" v-model.trim="value">
@@ -92,7 +92,7 @@
                             </div>
                             <p class="mt-2" id="message"></p>
                             <div class="login mt-4">
-                                如果您已经有賬號了 ? 但请直接點選
+                                如果您已经有帳號了 ? 但请直接點選
                                 <router-link to="/login">
                                     <span class="login">
                                          登入
@@ -164,14 +164,14 @@
                     xhr.send('name=' + this.members.name + '&type=' + this.members.type + '&email=' + this.members.email + '&cellphone=' + this.members.phone + '&password=' + this.members.password + '&password2=' + this.members.password2 + '&agree=' + this.value);
                 } else {
                     e.preventDefault();
-                    message.textContent = '请检查表单内容' ;
+                    message.textContent = '請檢查表單内容' ;
                 }
             },
 
             checkName() {
               const nameTip = document.getElementById('tipName')
               if (this.members.name.trim().length === 0 || this.members.name === '') {
-                nameTip.textContent = '* 姓名必填栏位'
+                nameTip.textContent = '* 姓名必填欄位'
               } else {
                 nameTip.textContent = '';
               }
@@ -180,7 +180,7 @@
             checkEmail() {
                 const emailTip = document.getElementById('tipEmail')
                 if (this.members.email.trim().length === 0 || this.members.email === '') {
-                  emailTip.textContent = '* Email 为必填栏位'
+                  emailTip.textContent = '* Email 為必填欄位'
                 } else {
                   emailTip.textContent = '';
                 }
@@ -189,7 +189,7 @@
             checkPhone() {
                 const phoneTip = document.getElementById('tipPhone');
                 if (this.members.phone === null) {
-                  phoneTip.textContent = '* 电话为必填栏位'
+                  phoneTip.textContent = '* 電話為必填欄位'
                 } else {
                   phoneTip.textContent = '';
                 }
@@ -198,9 +198,9 @@
             checkPassword() {
                 const password = document.getElementById('tipPassword');
                 if (this.members.password.length < 6) {
-                    password.textContent = '密码长度不得小于 6 '
+                    password.textContent = '密碼長度不得小於 6 '
                 } else if (this.members.password.length > 12) {
-                    password.textContent = '密码长度不得大于 12 '
+                    password.textContent = '密碼長度不得大於 12 '
                 } else {
                     password.textContent = ''
                 }
@@ -211,7 +211,7 @@
                 const tipAgree = document.getElementById('tipAgree');
                 if (!Check.checked) {
                     $event.preventDefault();
-                    tipAgree.textContent = '请同意条款';
+                    tipAgree.textContent = '請同意條款';
                 } else {
                     tipAgree.textContent = '';
                 }
@@ -220,11 +220,11 @@
             checkCode() {
                 const node = document.getElementById('tipCode');
                 if (this.members.code.trim().length === 0) {
-                    node.textContent = '* 请输入验证码';
+                    node.textContent = '* 請輸入驗證碼';
                     this.members.code = '';
                     this.createCode();
                 } else if (this.members.code.trim() !==  this.code){
-                    node.textContent = '* 验证码错误 ! 请重新输入';
+                    node.textContent = '* 驗證碼錯誤 ! 請重新輸入';
                     this.members.code = '';
                     this.createCode();
                 } else {

@@ -15,7 +15,7 @@
                     <thead style="border: 2px solid #666666">
                     <tr>
                         <th scope="col" colspan="5" style="color: orange;border: 2px solid #666666">
-                            <h3 class="ml-2">优惠訊息</h3>
+                            <h3 class="ml-2">優惠訊息</h3>
                             <ul class="mt-3">
                                 <li>
                                     商品金額差 NT$ 9,580 即可享9折最高優惠

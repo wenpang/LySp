@@ -3,7 +3,7 @@
         <div class="row text-center">
             <div class="col-12 col-sm-12 col-md-12">
                 <div class="alert alert-light" role="alert">
-                    &copy; 2019 HotsHills. 微风山丘
+                    &copy; 2019 HotsHills. 微風山丘
                 </div>
             </div>
         </div>

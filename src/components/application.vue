@@ -3,7 +3,7 @@
         <div class="row" style="margin-top: 80px;">
             <div class="col-12 col-md-12 text-center">
                 <p style="font-family: Pacifico,cursive;font-size: 30px;">
-                    <b>点击下载小程序</b>
+                    <b>點擊下載</b>
                 </p>
             </div>
         </div>

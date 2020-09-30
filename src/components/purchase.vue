@@ -4,7 +4,7 @@
         <div class="row mt-5 justify-content-center">
             <div class="col-10 col-md-10 col-sm-10 text-center">
                 <div>
-                    <h1 class="display-5"><strong>购买方式</strong></h1>
+                    <h1 class="display-5"><strong>購買方式</strong></h1>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
                     <li class="mt-5 getShop">
                         <router-link to="/shop">
                             <div style="width: 180px;height: 80px;background: lightsalmon;padding-top: 25px;border-radius: 5px" class="mt-3">
-                                <p class=" text-center" style="color: #888888"><b>直接购买</b></p>
+                                <p class=" text-center" style="color: #888888"><b>直接購買</b></p>
                             </div>
                         </router-link>
                     </li>

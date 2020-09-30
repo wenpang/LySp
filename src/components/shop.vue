@@ -10,7 +10,7 @@
                                 name="checkList"
                                 v-model="checkList"
                             >
-                                <option disabled>请选择</option>
+                                <option disabled>請選擇</option>
                                 <option
                                     v-for="list in selectList"
                                         v-bind:key="list.id"
@@ -40,11 +40,11 @@
                                 <p style="color: #FF0000">${{item.price}}</p>
                             </div>
                             <div>
-                                <p v-if="item.count < 1">目前已无库存</p>
+                                <p v-if="item.count < 1">目前已無庫存</p>
                             </div>
                             <div class="buy mb-2">
                                 <button type="button" style="font-size: 13px;" class="btn btn-danger" @click="addCar(item)" id="addCar" v-if="item.count > 0">
-                                    <i class="fas fa-shopping-cart"></i>加入购物车
+                                    <i class="fas fa-shopping-cart"></i>加入購物車
                                 </button>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                 selectList: [
                     {
                         id: 1,
-                        name: '凤梨酥 . 礼盒',
+                        name: '鳳梨酥 . 禮盒',
                         check: false,
                         category: "cookie"
                     },
@@ -103,7 +103,7 @@
                     },
                     {
                         id: 4,
-                        name: '全球果实计划',
+                        name: '全球果實计划',
                         category: "global",
                         check: false
                     },

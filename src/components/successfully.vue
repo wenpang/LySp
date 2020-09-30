@@ -7,7 +7,7 @@
         </el-steps>
         <div id="success" class="text-center">
             <img alt="载入错误" src="https://previews.123rf.com/images/vectorknight/vectorknight1802/vectorknight180200101/95581062-check-mark-logo-vector-or-icon-tick-symbol-in-green-color-illustration-accept-okey-symbol-for-approv.jpg" width="200">
-            <h3 class="mt-5">已完成订单</h3>
+            <h3 class="mt-5">已完成訂單</h3>
         </div>
     </div>
 </template>

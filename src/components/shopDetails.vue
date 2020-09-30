@@ -18,8 +18,8 @@
                         <p style="color: #FF8800">
                             ${{todo.price}}
                         </p>
-                        <p style="color: 	#FF0000" v-if="todo.count !== '0'" class="mt-2">库存还有 {{todo.count}}</p>
-                        <p style="color: #888888" v-if="todo.count === '0'" class="mt-2">目前已无库存</p>
+                        <p style="color: 	#FF0000" v-if="todo.count !== '0'" class="mt-2">庫存還有 {{todo.count}}</p>
+                        <p style="color: #888888" v-if="todo.count === '0'" class="mt-2">目前已無庫存</p>
                     </div>
                     <div class="add mt-3 text-center mb-3">
                         <button type="button" class="btn btn-danger" v-if="todo.count !== '0'" @click="addCar(todo)">加入购物车</button>
@@ -44,7 +44,7 @@
                     <hr>
                     <div class="feature ml-4">
                         <p style="color: #888888;font-size: 15px;">
-                            <strong>详细说明</strong>
+                            <strong>詳細説明</strong>
                         </p>
                         <ul type="square">
                             <li style="font-size: 15px;">
@@ -75,11 +75,11 @@
                     <hr>
                     <div class="feature ml-4">
                         <p style="color: #888888;font-size: 15px;">
-                            <strong>运送说明</strong>
+                            <strong>運送說明</strong>
                         </p>
                         <ul type="square" style="font-size: 15px;">
                             <li style="color: #FF0000" type="none">
-                                <b>台湾本省运送说明</b>
+                                <b>台灣運送说明</b>
                             </li>
                             <li>
                                 鳳梨酥：保存期限25天
